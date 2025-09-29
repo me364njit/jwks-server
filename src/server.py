@@ -10,7 +10,7 @@ app = Flask(__name__)
 logging.basicConfig(level=logging.INFO)
 
 # Load JWKS
-with open("jwks.json", "r") as f:
+with open("keys/jwks.json", "r") as f:
     JWKS = json.load(f)
 
 # Load private key
